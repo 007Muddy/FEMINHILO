@@ -1,0 +1,47 @@
+<Shell
+    x:Class="Femi.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Femi.Views"
+    Shell.FlyoutBehavior="{OnIdiom Phone=Flyout, Default=Locked}"
+    FlyoutBackdrop="GreenYellow"
+    FlyoutBackgroundColor="Khaki"
+    BackgroundColor="Cyan"
+    FlyoutIcon="Resources/Images/menu_2976215.png"
+    Title="Feminihlo">
+
+
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100">
+            <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center" />
+            
+        </Grid>
+    </Shell.FlyoutHeader>
+
+
+    <FlyoutItem Title="Home" Icon="Resources/Images/home_1946436.png">
+        <ShellContent 
+        Title="Home"  
+        ContentTemplate="{DataTemplate views:New}" 
+        Route="New" />
+    </FlyoutItem>
+
+
+
+    <FlyoutItem Title="Settings" Icon="Resources/Images/setting_3019014.png">
+        <ShellContent 
+            Title="Settings" 
+            ContentTemplate="{DataTemplate views:SettingsPage}" 
+            Route="settings" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Profile" Icon="Resources/Images/user_456212.png">
+        <ShellContent 
+            Title="Profile" 
+            ContentTemplate="{DataTemplate views:ProfilePage}" 
+            Route="profile" />
+    </FlyoutItem>
+
+</Shell>
