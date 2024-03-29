@@ -11,11 +11,12 @@
     Title="Feminihlo">
 
 
-
+    
+    
     <Shell.FlyoutHeader>
         <Grid HeightRequest="100">
             <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center" />
-            
+
         </Grid>
     </Shell.FlyoutHeader>
 
@@ -43,5 +44,13 @@
             ContentTemplate="{DataTemplate views:ProfilePage}" 
             Route="profile" />
     </FlyoutItem>
+    <FlyoutItem Title="Cart" Icon="Resources/Images/cart1.png">
+        <ShellContent 
+     Title="Come"  
+     ContentTemplate="{DataTemplate views:New}" 
+     Route="Cart" />
+    </FlyoutItem>
+
+
 
 </Shell>
