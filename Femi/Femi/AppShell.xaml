@@ -11,8 +11,8 @@
     Title="Feminihlo">
 
 
-    
-    
+
+
     <Shell.FlyoutHeader>
         <Grid HeightRequest="100">
             <Label Text="Menu" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -29,13 +29,6 @@
     </FlyoutItem>
 
 
-
-    <FlyoutItem Title="Settings" Icon="Resources/Images/setting_3019014.png">
-        <ShellContent 
-            Title="Settings" 
-            ContentTemplate="{DataTemplate views:SettingsPage}" 
-            Route="settings" />
-    </FlyoutItem>
 
 
     <FlyoutItem Title="Profile" Icon="Resources/Images/user_456212.png">

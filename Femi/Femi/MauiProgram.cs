@@ -16,7 +16,7 @@ namespace Femi
                 })
                 .Services.AddSingleton<Views.New>()
                 .AddSingleton<Views.ProfilePage>()
-                                .AddSingleton<Views.SettingsPage>()
+                              
                                 .AddSingleton<Views.Cart>()
 
           ;
